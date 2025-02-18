@@ -9,10 +9,10 @@ pipeline {
         }
     stage('display') {
         steps {
+            bat 'node hello'
             echo 'This is to display'
         }
     }  
-print("Less Gooo")
-  print("Less goo nuubs")
+
     }
 }
