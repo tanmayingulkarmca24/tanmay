@@ -11,6 +11,8 @@ pipeline {
         steps {
             echo 'This is to display'
         }
-    }    
+    }  
+print("Less Gooo")
+  print("Less goo nuubs")
     }
 }
