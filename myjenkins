@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                bat 'python main.py'
-                echo 'Hello World'
+              publishHTML([publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'first.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])])
             }
         }
    
