@@ -4,14 +4,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+                bat 'python main.py'
                 echo 'Hello World'
             }
         }
-    stage('display') {
-        steps {
-            bat 'python main.py'
-            echo 'This is to display'
-        }
-    }  
-}   
+   
 }
