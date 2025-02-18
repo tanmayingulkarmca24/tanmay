@@ -9,7 +9,7 @@ pipeline {
         }
     stage('display') {
         steps {
-            bat 'node hello'
+            bat 'python main.py'
             echo 'This is to display'
         }
     }  
