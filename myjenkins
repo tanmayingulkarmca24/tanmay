@@ -6,13 +6,12 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
-        }}
+        }
     stage('display') {
         steps {
             bat 'python main.py'
             echo 'This is to display'
         }
     }  
-
-    
+}   
 }
